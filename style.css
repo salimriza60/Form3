@@ -111,7 +111,7 @@ a{
 /*slider part start*/
 
 .slider_part{
-    background: url(./img/lion.jpg);
+    background: url(img/lion.jpg);
     height: 900px;
     background-repeat: no-repeat;
     background-size: cover;
