@@ -1,0 +1,175 @@
+/* Font Link*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+/* common css*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* main css*/
+
+.header_part{
+    background: #f1f1f1;
+    position: fixed;
+    width: 100%;
+    }
+.container{
+    max-width: 80%;
+    margin: 0 auto; 
+}
+.menubar{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 32px;
+    line-height: 60px;
+}
+.nav ul{
+    display: inline-flex;
+
+}
+.nav ul li{
+    height: 60px;
+    width: 100px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.3s ;
+    position: relative;
+}
+.nav ul li a{
+    colo: #f1f1f1;
+}
+.nav ul li:hover{
+    background:#16a085;
+    cursor: pointer;
+}
+.nav ul li:hover a{
+    color: #f1f1f1;
+}
+.dropdown{
+    display: none;
+    background: #f1f1f1;
+    position: absolute;
+    top: 60px;
+    left: 0%;
+}
+.nav ul li:hover .dropdown{
+    display: block;
+}
+.nav ul li:hover .dropdown ul{
+    display: block;
+}
+.nav ul li:hover .dropdown ul li a{
+    color: black;
+}
+.nav ul li:hover .dropdown ul li:hover a {
+
+    color: #fff;
+}
+
+.dropdown ul li{
+    position: relative;
+}
+
+.sub_drop{
+    display: none;
+    background: #f1f1f1;
+    position: absolute;
+    top:0;
+    left:100px;
+}
+
+.dropdown ul li:hover .sub_drop {
+    display: block;
+}
+
+.dropdown ul li:hover .sub_drop ul li a {
+    color: black !important;
+}
+
+.dropdown ul li:hover .sub_drop ul li:hover a {
+    color: #f1f1f1 !important;
+}
+
+/*menu bar end*/
+
+/*slider part start*/
+
+.slider_part{
+    background: url(./img/lion.jpg);
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.slider_part{
+    padding: 40px 0;
+}
+.slider_part .container{
+    display: flex;
+    justify-content: center;
+}
+
+.from{
+    margin-top: 100px;
+    background: #f1f1f1;
+    width: 350px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -10px -10px 10px black, 10px 10px 10px red;
+}
+
+.from input{
+    margin: 5px 0 15px;
+    height: 25px;
+    width: 250px;
+    background: transparent;
+    border-bottom: solid #000;
+    border-radius: 30px;
+    padding-left: 10px;
+    color: #16a085;
+}
+
+.from input::placeholder{
+    color: red;
+}
+.btn{
+    display: block;
+    height: 40px;
+    width: 120px;
+    background: #16a085;
+    border: none;
+    border-radius: 30px;
+    color: #f1f1f1;
+    transition: 00.3s;
+}
+
+.btn:hover{
+    transform: rotateX(180deg);
+}
+.dd{
+    display: flex;
+    justify-content: center;
+    
+}
+
+/*slider part end*/
